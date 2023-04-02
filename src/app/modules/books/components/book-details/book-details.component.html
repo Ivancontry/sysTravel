@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>{{book.title}}</h2>
+<mat-dialog-content>
+  <div class="book-details">
+    <div class="book-info">
+      <p><strong>ISBN:</strong> {{book.isbn}}</p>
+      <p><strong>Editorial:</strong> {{book.editorial?.name}}</p>
+      <p><strong>Authors:</strong></p>
+      <ul>
+        <li *ngFor="let author of book.authors">{{author.name}} {{author.lastName}}</li>
+      </ul>
+      <p><strong>Synopsis:</strong></p>
+      <p>{{book.synopsis}}</p>
+      <p><strong>Pages:</strong> {{book.pagesNumber}}</p>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onClose()">Close</button>
+</mat-dialog-actions>

@@ -1,0 +1,28 @@
+.book-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.book-thumbnail {
+  margin-right: 16px;
+}
+
+.book-thumbnail img {
+  width: 150px;
+  height: auto;
+}
+
+.book-info p {
+  margin-bottom: 8px;
+}
+
+.book-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-info ul li {
+  margin-bottom: 4px;
+}
